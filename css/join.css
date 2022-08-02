@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+#join_section {
+    padding: 200px 0;
+    background: #eef5fc;
+}
+
+#join_section .joinbox {
+    padding: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #fff;
+}
+#join_section .joinbox > div {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+#join_section .joinbox h2 { 
+    color: #374785;   
+    font-size: 40px;
+    text-align: center;
+}
+#join_section .joinbox h2 i { display: block; }
+
+#join_section .joinbox form { margin: 50px 0 0 25px; }
+
+#join_section .joinbox form p > label:first-child {
+    display: block;
+    font-size: 17px;
+    margin: 10px 0;
+    color: #282866;
+    font-weight: bold;
+}
+
+#join_section .joinbox .text input,
+#join_section .joinbox .text select {
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #9a9aa0;
+    font-size: 16px;
+    margin: 0 0 15px 10px;
+}
+#join_section .joinbox .text input:focus { border-bottom: 2px solid #374785; }
+
+#join_section .joinbox #user_id+button {
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 8px;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    margin-left: 20px;
+    background-color: #3EB2FD;;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+}
+#join_section .joinbox #user_id+button:hover { 
+    background: #e0e5f3; 
+    color: #505050;
+}
+
+#join_section .joinbox #user_pw:focus+span,
+#join_section .joinbox #user_pw_ck:focus+span { opacity: 1; }
+#join_section .joinbox #user_pw+span,
+#join_section .joinbox #user_pw_ck+span {
+    opacity: 0;
+    color: #f00;
+    transition: all 0.5s;
+    font-size: 12px;
+}
+
+#join_section .joinbox .spbg {
+    background-image: url(../images/spimg.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#join_section .joinbox .user_gender,
+#join_section .joinbox .user_interest,
+#join_section .joinbox .user_file { padding-bottom: 15px; }
+#join_section .joinbox .user_gender input { display: none; }
+#join_section .joinbox .user_gender label span {
+    width: 19px;
+    height: 18px;
+    background-position: -48px -3px;
+    margin: 0 10px;
+    vertical-align: text-bottom;
+}
+#join_section .joinbox .user_gender input:checked+label > span { background-position: -2px -27px; }
+
+#join_section .joinbox .user_mail input { width: 30%; }
+#join_section .joinbox .user_mail select {
+    width: 30%; 
+    appearance: none;
+    background-image: url(../images/arr_03.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    margin-left: 0;
+}
+
+/* ---------- 관심분야 ----------*/
+#join_section .joinbox .user_interest input { display: none; }
+#join_section .joinbox .user_interest label span {
+    width: 18px;
+    height: 18px;
+    background-position: -2px -2px;
+    margin: 0 10px;
+    vertical-align: text-bottom;
+}
+#join_section .joinbox .user_interest input:checked+label > span { background-position: -22px -2px; }
+
+/* ---------- 첨부파일 ----------*/
+#join_section .joinbox #upload::file-selector-button {
+    width: 30%;
+    padding: 8px;
+    border-radius: 8px;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    margin: 0 10px;
+    background-color: #3EB2FD;;
+    box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    border: none;
+}
+
+/* ---------- 요청사항 ----------*/
+#join_section .joinbox #user_req {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    border: 1px solid #1E90FF;
+    border-radius: 5px;
+    font-size: 16px;
+    outline-color: #374785;
+}
+
+/* ---------- 하단 버튼 ----------*/
+#join_section .joinbox .join_btn { text-align: center; }
+#join_section .joinbox .join_btn button {
+    width: 40%;
+    padding: 13px 0;
+    font-size: 20px;
+    margin: 50px 20px 0; 
+    border: 0;
+    border-radius: 8px;    
+    color: #fff;
+    cursor: pointer;
+}
+#join_section .joinbox .join_btn button:first-child {
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);   
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+#join_section .joinbox .join_btn button:last-child { 
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    box-shadow: 0px 0px 14px -7px #f09819;
+}
